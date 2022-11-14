@@ -1,0 +1,34 @@
+{
+  "name": "Oliot TSD",
+  "description": "GS1 TSD implementation for Research and SMEs",
+  "website": "https://oliot-tsd.github.io",
+  "repository": "https://github.com/oliot-tsd/tsd-heroku",
+  "logo": "https://avatars0.githubusercontent.com/u/30464103",
+  "keywords": [
+    "gs1",
+    "oliot",
+    "tsd",
+    "gs1source"
+  ],
+  "addons": [
+    "mongolab:sandbox",
+    "cloudinary:starter"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/java"
+    }
+  ],
+  "env": {
+    "ADMIN_USERNAME": {
+      "description": "Administrator Username"
+    },
+    "ADMIN_PASSWORD": {
+      "description": "Administrator Password"
+    },
+    "GOOGLE_MANAGER_ID": {
+      "description": "User ID for Google Analytics",
+      "required": false
+    }
+  }
+}

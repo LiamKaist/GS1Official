@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Open Language for Internet of Things (Oliot)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      lang="en">
+<head>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async="async"
+            th:attrappend="src='https://www.googletagmanager.com/gtag/js?id=' +
+                    ${@environment.getProperty('oliot.tsd.config.GOOGLE_MANAGER_ID')}"></script>
+    <script th:inline="javascript">
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments)
+        };
+        gtag('js', new Date());
+
+        gtag('config', /*[[${@environment.getProperty('oliot.tsd.config.GOOGLE_MANAGER_ID')}]]*/);
+    </script>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Oliot TSD</title>
+    <link rel="icon" type="image/x-icon"
+          th:href="@{/static/images/favicon.ico}"/>
+    <link rel="stylesheet" type="text/css"
+          th:href="@{/webjars/bootstrap/3.1.1/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css"
+          th:href="@{/webjars/bootstrap/3.1.1/css/bootstrap-theme.min.css}"/>
+    <link rel="stylesheet" type="text/css"
+          th:href="@{/css/common.css}"/>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" th:href="@{/}">Oliot TSD</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/source}" th:target="_blank">Source</a></li>
+                <li><a th:href="@{/apis}">APIs</a></li>
+                <li><a th:href="@{/schema}" th:target="_blank">Schema</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <th:block layout:fragment="content">
+
+    </th:block>
+</div>
+<script type="text/javascript"
+        th:src="@{/webjars/jquery/1.9.0/jquery.min.js}"></script>
+<script type="text/javascript"
+        th:src="@{/webjars/bootstrap/3.1.1/js/bootstrap.min.js}"></script>
+<th:block layout:fragment="scripts">
+
+</th:block>
+
+</body>
+</html>

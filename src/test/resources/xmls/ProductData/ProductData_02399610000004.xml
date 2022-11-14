@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2017 Open Language for Internet of Things (Oliot)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<product_data:productData xmlns:product_data="urn:gs1:tsd:product_data:xsd:1"
+                          xmlns:basic_product_information_module="urn:gs1:tsd:basic_product_information_module:xsd:1"
+                          xmlns:product_instructions_module="urn:gs1:tsd:product_instructions_module:xsd:1"
+                          xmlns:product_quantity_information_module="urn:gs1:tsd:product_quantity_information_module:xsd:1"
+                          xmlns:product_claims_and_endorsements_module="urn:gs1:tsd:product_claims_and_endorsements_module:xsd:1"
+                          xmlns:product_origin_information_module="urn:gs1:tsd:product_origin_information_module:xsd:1">
+    <gtin>02399610000004</gtin>
+    <targetMarket codeListVersion="1.1">410</targetMarket>
+    <informationProviderGLN>1234567891234</informationProviderGLN>
+    <informationProviderName>Lotte Mart</informationProviderName>
+    <productDataRecord>
+        <module>
+            <basic_product_information_module:basicProductInformationModule>
+                <productName languageCode="kr" codeListVersion="1.1">감자</productName>
+                <gpcCategoryCode>12345678</gpcCategoryCode>
+                <brandNameInformation>
+                    <brandName>Lotte Mart</brandName>
+                    <languageSpecificBrandName languageCode="en" codeListVersion="1.1">Lotte Mart</languageSpecificBrandName>
+                </brandNameInformation>
+                <productInformationLink>
+                    <url>http://www.lottemart.com/product/ProductDetail.do?CategoryID=C001001200010002&amp;ProductCD=2399610000004</url>
+                    <productInformationTypeCode>MARKETING_INFORMATION</productInformationTypeCode>
+                    <languageCode>kr</languageCode>
+                </productInformationLink>
+                <imageLink>
+                    <url>http://res.cloudinary.com/hcxh60wvk/image/upload/v1505284440/02399610000004/1.jpg</url>
+                    <imageTypeCode>PRODUCT_IMAGE</imageTypeCode>
+                    <languageCode>kr</languageCode>
+                </imageLink>
+                <imageLink>
+                    <url>http://res.cloudinary.com/hcxh60wvk/image/upload/v1505284440/02399610000004/2.jpg</url>
+                    <imageTypeCode>PRODUCT_IMAGE</imageTypeCode>
+                    <languageCode>kr</languageCode>
+                </imageLink>
+                <imageLink>
+                    <url>http://res.cloudinary.com/hcxh60wvk/image/upload/v1505284440/02399610000004/3.jpg</url>
+                    <imageTypeCode>PRODUCT_IMAGE</imageTypeCode>
+                    <languageCode>kr</languageCode>
+                </imageLink>
+            </basic_product_information_module:basicProductInformationModule>
+            <product_instructions_module:productInstructionsModule>
+                <consumerStorageInstructions languageCode="kr" codeListVersion="1.1">본 상품은 점포별로 제조,유통기한이 상이하여 제조연월 정보 제공이 어렵습니다. 유통기한은 별도로 없으나, 부패할 수 있으니 냉장보관하여 5일 이내로 드시기 바랍니다.</consumerStorageInstructions>
+            </product_instructions_module:productInstructionsModule>
+            <product_quantity_information_module:productQuantityInformationModule>
+                <netContent measurementUnitCode="GRM" codeListVersion="1.1">100</netContent>
+            </product_quantity_information_module:productQuantityInformationModule>
+            <product_claims_and_endorsements_module:productClaimsAndEndorsementsModule>
+                <dietaryClaimCode codeListVersion="1.1">VEGETARIAN</dietaryClaimCode>
+            </product_claims_and_endorsements_module:productClaimsAndEndorsementsModule>
+            <product_origin_information_module:productOriginInformationModule>
+                <countryOfOrigin>
+                    <countryCode>410</countryCode>
+                </countryOfOrigin>
+            </product_origin_information_module:productOriginInformationModule>
+        </module>
+    </productDataRecord>
+</product_data:productData>

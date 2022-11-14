@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2017 Open Language for Internet of Things (Oliot)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<basic_product_information_module:basicProductInformationModule
+        xmlns:basic_product_information_module="urn:gs1:tsd:basic_product_information_module:xsd:1"
+>
+    <productName codeListVersion="1.1" languageCode="en">Product Name</productName>
+    <consumerMarketingDescription codeListVersion="1.1" languageCode="en">Consumer Market Description</consumerMarketingDescription>
+    <gpcCategoryCode>12345678</gpcCategoryCode>
+    <regulatedProductName codeListVersion="1.1" languageCode="en">Regulated Product Name</regulatedProductName>
+    <brandNameInformation>
+        <brandName>Brand Name</brandName>
+        <languageSpecificBrandName codeListVersion="1.1" languageCode="en">Language Specific Brand Name</languageSpecificBrandName>
+    </brandNameInformation>
+    <productInformationLink>
+        <url>http://tempuri.org</url>
+        <productInformationTypeCode codeListVersion="1.1">Product Information Type Code</productInformationTypeCode>
+        <languageCode codeListVersion="1.1">en</languageCode>
+        <avpList>
+            <stringAVP name="attr1">attr1_VAL</stringAVP>
+        </avpList>
+    </productInformationLink>
+    <imageLink>
+        <url>http://tempuri.org</url>
+        <imageTypeCode codeListVersion="1.1">Image Type Code</imageTypeCode>
+        <languageCode codeListVersion="1.1">en</languageCode>
+        <imagePixelHeight>300</imagePixelHeight>
+        <imagePixelWidth>300</imagePixelWidth>
+        <fileSize codeListVersion="1.1" measurementUnitCode="kB">1500</fileSize>
+        <avpList>
+            <stringAVP name="attr1">attr1_VAL</stringAVP>
+        </avpList>
+    </imageLink>
+    <packagingSignatureLine>
+        <partyContactRoleCode codeListVersion="1.1">partyContactRoleCode</partyContactRoleCode>
+        <partyContactName>partyContactName</partyContactName>
+        <partyContactAddress>partyContactAddress</partyContactAddress>
+        <gln>1234567890123</gln>
+        <communicationChannel>
+            <communicationChannelCode codeListVersion="1.1">communicationChannelCode</communicationChannelCode>
+            <communicationValue>communicationValue</communicationValue>
+        </communicationChannel>
+        <avpList>
+            <stringAVP name="attr1">attr1_VAL</stringAVP>
+        </avpList>
+    </packagingSignatureLine>
+    <avpList>
+        <stringAVP name="attr1">attr1_VAL</stringAVP>
+    </avpList>
+</basic_product_information_module:basicProductInformationModule>

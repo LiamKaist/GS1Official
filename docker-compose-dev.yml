@@ -1,0 +1,29 @@
+version: "3.1"
+
+services:
+  database:
+    build:
+       context: ./db
+    image: tsd_db
+    ports:
+      - "27017:27017"
+    networks:
+      - back-tier
+
+  appserver:
+    build:
+       context: ./
+       dockerfile: Dockerfile-dev
+    image: tsd
+    environment:
+       MONGODB_URI: "mongodb://database:27017/trusted_data"
+       ADMIN_USERNAME: admin
+       ADMIN_PASSWORD: admin
+    ports:
+      - "8080:8080"
+      - "5005:5005"
+    networks:
+      - back-tier
+
+networks:
+  back-tier:

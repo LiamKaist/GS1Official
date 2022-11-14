@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Open Language for Internet of Things (Oliot)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      lang="en"
+      layout:decorator="default">
+<head>
+    <link rel="stylesheet" type="text/css"
+          th:href="@{/css/codemirror.css}"/>
+    <script type="text/javascript"
+            th:src="@{/js/codemirror.js}"></script>
+</head>
+<body>
+<th:block layout:fragment="content">
+    <div class="starter-template">
+        <form action="/insert" method="post">
+            <p class="lead">Enter Product Data</p>
+            <textarea rows="50" cols="100" id="editor" name="editor"></textarea>
+            <br/>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <hr/>
+        <p class="lead">Load Sample Product Data</p>
+        <button class="btn btn-default" id="08801019310614">해태 버터링</button>
+        <button class="btn btn-default" id="08801037088168">오레오 화이트크림</button>
+        <button class="btn btn-default" id="08801056059842">아이시스 8.0</button>
+        <button class="btn btn-default" id="08808244201014">삼다수</button>
+        <button class="btn btn-default" id="02399610000004">감자</button>
+        <button class="btn btn-default" id="00430000007905">양배추</button>
+        <hr/>
+        <p class="lead">Danger Zone</p>
+        <form action="/reset" method="post">
+            <button type="submit" class="btn btn-danger">Reset Database</button>
+        </form>
+    </div>
+</th:block>
+<th:block layout:fragment="scripts">
+    <script type="text/javascript"
+            th:src="@{/js/xml.js}"></script>
+    <script type="text/javascript">
+        var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+            mode: "application/xml",
+            lineNumbers: true
+        });
+
+        $('#08801019310614').click(function (event){
+            event.preventDefault();
+            $.ajax({
+                url: 'https://raw.githubusercontent.com/oliot-tsd/tsd-heroku/master/src/test/resources/xmls/ProductData/ProductData_08801019310614.xml'
+                ,success: function(response) {
+                    editor.getDoc().setValue(response);
+                }
+                ,error: function() {
+                    editor.getDoc().setValue("Unable to Load XML");
+                }
+            });
+            return false;
+        });
+
+        $('#08801037088168').click(function (event){
+            event.preventDefault();
+            $.ajax({
+                url: 'https://raw.githubusercontent.com/oliot-tsd/tsd-heroku/master/src/test/resources/xmls/ProductData/ProductData_08801037088168.xml'
+                ,success: function(response) {
+                    editor.getDoc().setValue(response);
+                }
+                ,error: function() {
+                    editor.getDoc().setValue("Unable to Load XML");
+                }
+            });
+            return false;
+        });
+
+        $('#08801056059842').click(function (event){
+            event.preventDefault();
+            $.ajax({
+                url: 'https://raw.githubusercontent.com/oliot-tsd/tsd-heroku/master/src/test/resources/xmls/ProductData/ProductData_08801056059842.xml'
+                ,success: function(response) {
+                    editor.getDoc().setValue(response);
+                }
+                ,error: function() {
+                    editor.getDoc().setValue("Unable to Load XML");
+                }
+            });
+            return false;
+        });
+
+        $('#08808244201014').click(function (event){
+            event.preventDefault();
+            $.ajax({
+                url: 'https://raw.githubusercontent.com/oliot-tsd/tsd-heroku/master/src/test/resources/xmls/ProductData/ProductData_08808244201014.xml'
+                ,success: function(response) {
+                    editor.getDoc().setValue(response);
+                }
+                ,error: function() {
+                    editor.getDoc().setValue("Unable to Load XML");
+                }
+            });
+            return false;
+        });
+
+        $('#02399610000004').click(function (event){
+            event.preventDefault();
+            $.ajax({
+                url: 'https://raw.githubusercontent.com/oliot-tsd/tsd-heroku/master/src/test/resources/xmls/ProductData/ProductData_02399610000004.xml'
+                ,success: function(response) {
+                    editor.getDoc().setValue(response);
+                }
+                ,error: function() {
+                    editor.getDoc().setValue("Unable to Load XML");
+                }
+            });
+            return false;
+        });
+
+        $('#00430000007905').click(function (event){
+            event.preventDefault();
+            $.ajax({
+                url: 'https://raw.githubusercontent.com/oliot-tsd/tsd-heroku/master/src/test/resources/xmls/ProductData/ProductData_00430000007905.xml'
+                ,success: function(response) {
+                    editor.getDoc().setValue(response);
+                }
+                ,error: function() {
+                    editor.getDoc().setValue("Unable to Load XML");
+                }
+            });
+            return false;
+        });
+    </script>
+</th:block>
+</body>
+</html>

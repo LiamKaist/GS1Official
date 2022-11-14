@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Open Language for Internet of Things (Oliot)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      lang="en"
+      layout:decorator="default">
+<head>
+    <title>Product Details</title>
+    <script type="text/javascript"
+            th:src="@{/js/cloudinary-core-shrinkwrap.js}"></script>
+</head>
+<body>
+<th:block layout:fragment="content">
+    <div class="row">
+        <div class="col-lg-3">
+            <a th:attrappend="href='/product/' + ${productData.gtin}">
+                <h1 class="my-4" th:text="${productName}">Product Name</h1>
+            </a>
+            <div class="list-group" id="modules">
+                <a th:attrappend="href='/product/' + ${productData.gtin} + '/BasicProductInformation'" class="list-group-item">Basic Product Information</a>
+                <a th:attrappend="href='/product/' + ${productData.gtin} + '/ProductAllergenInformation'" class="list-group-item">Product Allergen Information</a>
+                <a th:attrappend="href='/product/' + ${productData.gtin} + '/ProductClaimsAndEndorsements'" class="list-group-item">Product Claims And Endorsements</a>
+                <a th:attrappend="href='/product/' + ${productData.gtin} + '/ProductInstructions'" class="list-group-item">Product Instructions</a>
+                <a th:attrappend="href='/product/' + ${productData.gtin} + '/ProductQuantityInformation'" class="list-group-item">Product Quantity Information</a>
+                <a th:attrappend="href='/product/' + ${productData.gtin} + '/ProductOriginInformation'" class="list-group-item">Product Origin Information</a>
+                <a th:attrappend="href='/product/' + ${productData.gtin} + '/FoodAndBeverageIngredientInformation'" class="list-group-item">Food And Beverage Ingredient Information</a>
+                <a th:attrappend="href='/product/' + ${productData.gtin} + '/FoodAndBeveragePreparationInformation'" class="list-group-item">Food And Beverage Preparation Information</a>
+                <a th:attrappend="href='/product/' + ${productData.gtin} + '/NutritionalProductInformation'" class="list-group-item">Nutritional Product Information</a>
+            </div>
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+            <div class="card mt-4" id="contents">
+                <img class="card-img-top img-fluid cld-responsive"
+                     th:attrappend="data-src='https://res.cloudinary.com/'+ ${cloudinaryName} + '/image/upload/w_auto/' + ${productData.gtin} + '/1.jpg'"/>
+                <div class="card-body">
+                    <h3 class="card-title">Information Provider GLN</h3>
+                    <h4 th:text="${productData.informationProviderGLN}">Information Provider GLN</h4>
+                    <h3 class="card-title">Information Provider Name</h3>
+                    <h4 th:text="${productData.informationProviderName}">Information Provider Name</h4>
+                </div>
+            </div>
+            <!-- /.card -->
+        </div>
+
+        <!-- /.col-lg-9 -->
+    </div>
+</th:block>
+<th:block layout:fragment="scripts">
+    <script type="text/javascript" th:inline="javascript">
+        var cl = cloudinary.Cloudinary.new({
+            cloud_name: /*[[${cloudinaryName}]]*/
+        });
+        cl.responsive();
+    </script>
+
+    <script type="text/javascript">
+        $('#modules').find('a').click(function (event){
+            event.preventDefault();
+            $.ajax({
+                url: $(this).attr('href'),
+                dataType: 'json'
+                ,success: function(response) {
+                    $('#contents').empty().append("<pre></pre>");
+                    $('pre').text(JSON.stringify(response, null, 2));
+                }
+                ,error: function () {
+                    $('#contents').empty().append("<pre></pre>");
+                    $('pre').text('NO DATA');
+                }
+            });
+            return false;
+        });
+    </script>
+</th:block>
+</body>
+</html>

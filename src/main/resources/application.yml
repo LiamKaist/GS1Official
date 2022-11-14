@@ -1,0 +1,15 @@
+---
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/trusted_data}
+  jackson:
+    default-property-inclusion: non_null
+
+server:
+  port: ${PORT:8080}
+
+oliot:
+  tsd:
+    config:
+      GOOGLE_MANAGER_ID: ${GOOGLE_MANAGER_ID:UA-106158007-1}
