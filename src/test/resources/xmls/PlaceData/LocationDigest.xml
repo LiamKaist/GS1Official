@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2017 Open Language for Internet of Things (Oliot)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<product_data:productData xmlns:product_data="urn:gs1:tsd:product_data:xsd:1"
+                          xmlns:basic_product_information_module="urn:gs1:tsd:basic_product_information_module:xsd:1">
+    <gtin>09501101530003</gtin>
+    <targetMarket codeListVersion="1.1">410</targetMarket>
+    <informationProviderGLN>9501101530003</informationProviderGLN>
+    <informationProviderName>Hongik University Station</informationProviderName>
+    <productDataRecord>
+        <module>
+            <basic_product_information_module:basicProductInformationModule>
+                <productName languageCode="en" codeListVersion="1.1">Food</productName>
+                <gpcCategoryCode>68040100</gpcCategoryCode>
+                <imageLink>
+                    <url>https://www.dropbox.com/s/hzu4q09w5frnyx6/24127075_1457464977636277_435842303261671424_n.jpg?raw=1</url>
+                    <imageTypeCode>PRODUCT_IMAGE</imageTypeCode>
+                </imageLink>
+            </basic_product_information_module:basicProductInformationModule>
+            <basic_product_information_module:basicProductInformationModule>
+                <productName languageCode="en" codeListVersion="1.1">Food</productName>
+                <gpcCategoryCode>68040100</gpcCategoryCode>
+                <imageLink>
+                    <url>https://www.dropbox.com/s/hzu4q09w5frnyx6/24127075_1457464977636277_435842303261671424_n.jpg?raw=1</url>
+                    <imageTypeCode>PRODUCT_IMAGE</imageTypeCode>
+                </imageLink>
+            </basic_product_information_module:basicProductInformationModule>
+            <basic_product_information_module:basicProductInformationModule>
+                <productName languageCode="en" codeListVersion="1.1">Food</productName>
+                <gpcCategoryCode>68040100</gpcCategoryCode>
+                <imageLink>
+                    <url>https://www.dropbox.com/s/hzu4q09w5frnyx6/24127075_1457464977636277_435842303261671424_n.jpg?raw=1</url>
+                    <imageTypeCode>PRODUCT_IMAGE</imageTypeCode>
+                </imageLink>
+            </basic_product_information_module:basicProductInformationModule>
+            <basic_product_information_module:basicProductInformationModule>
+                <productName languageCode="en" codeListVersion="1.1">Food</productName>
+                <gpcCategoryCode>68040100</gpcCategoryCode>
+                <imageLink>
+                    <url>https://www.dropbox.com/s/hzu4q09w5frnyx6/24127075_1457464977636277_435842303261671424_n.jpg?raw=1</url>
+                    <imageTypeCode>PRODUCT_IMAGE</imageTypeCode>
+                </imageLink>
+            </basic_product_information_module:basicProductInformationModule>
+            <basic_product_information_module:basicProductInformationModule>
+                <productName languageCode="en" codeListVersion="1.1">Food</productName>
+                <gpcCategoryCode>68040100</gpcCategoryCode>
+                <imageLink>
+                    <url>https://www.dropbox.com/s/hzu4q09w5frnyx6/24127075_1457464977636277_435842303261671424_n.jpg?raw=1</url>
+                    <imageTypeCode>PRODUCT_IMAGE</imageTypeCode>
+                </imageLink>
+            </basic_product_information_module:basicProductInformationModule>
+            <basic_product_information_module:basicProductInformationModule>
+                <productName languageCode="en" codeListVersion="1.1">Food</productName>
+                <gpcCategoryCode>68040100</gpcCategoryCode>
+                <imageLink>
+                    <url>https://www.dropbox.com/s/hzu4q09w5frnyx6/24127075_1457464977636277_435842303261671424_n.jpg?raw=1</url>
+                    <imageTypeCode>PRODUCT_IMAGE</imageTypeCode>
+                </imageLink>
+            </basic_product_information_module:basicProductInformationModule>
+        </module>
+    </productDataRecord>
+</product_data:productData>

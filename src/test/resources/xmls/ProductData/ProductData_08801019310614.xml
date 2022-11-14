@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2017 Open Language for Internet of Things (Oliot)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<product_data:productData xmlns:product_data="urn:gs1:tsd:product_data:xsd:1"
+                          xmlns:basic_product_information_module="urn:gs1:tsd:basic_product_information_module:xsd:1"
+>
+    <gtin>08801019310614</gtin>
+    <targetMarket codeListVersion="1.1">410</targetMarket>
+    <informationProviderGLN>1234567891234</informationProviderGLN>
+    <informationProviderName>Lotte Mart</informationProviderName>
+    <productDataRecord>
+        <module>
+            <basic_product_information_module:basicProductInformationModule>
+                <productName languageCode="kr" codeListVersion="1.1">해태 버터링</productName>
+                <gpcCategoryCode>12345678</gpcCategoryCode>
+                <brandNameInformation>
+                    <brandName>해태</brandName>
+                    <languageSpecificBrandName languageCode="en" codeListVersion="1.1">Haitai</languageSpecificBrandName>
+                </brandNameInformation>
+                <productInformationLink>
+                    <url>http://www.lottemart.com/product/ProductDetail.do?ProductCD=8801019310614</url>
+                    <productInformationTypeCode>MARKETING_INFORMATION</productInformationTypeCode>
+                    <languageCode>kr</languageCode>
+                </productInformationLink>
+                <imageLink>
+                    <url>http://res.cloudinary.com/hcxh60wvk/image/upload/v1505284360/08801019310614/1.jpg</url>
+                    <imageTypeCode>PRODUCT_IMAGE</imageTypeCode>
+                    <languageCode>kr</languageCode>
+                </imageLink>
+                <packagingSignatureLine>
+                    <partyContactRoleCode>MANUFACTURER_OF_GOODS</partyContactRoleCode>
+                    <partyContactName>훼미리식품(주)</partyContactName>
+                    <partyContactAddress>216, Palgwajeong-ro, Deokjin-gu, Jeonju-si, Jeollabuk-do, Republic of Korea</partyContactAddress>
+                </packagingSignatureLine>
+                <packagingSignatureLine>
+                    <partyContactRoleCode>DISTRIBUTOR</partyContactRoleCode>
+                    <partyContactName>해태제과식품(주)</partyContactName>
+                    <partyContactAddress>3, Hangang-daero 72-gil, Yongsan-gu, Seoul, Republic of Korea</partyContactAddress>
+                </packagingSignatureLine>
+            </basic_product_information_module:basicProductInformationModule>
+        </module>
+    </productDataRecord>
+</product_data:productData>

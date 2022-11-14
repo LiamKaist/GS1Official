@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Open Language for Internet of Things (Oliot)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      lang="en"
+      layout:decorator="default">
+<head>
+    <title>Location Digest</title>
+</head>
+<body>
+<th:block layout:fragment="content">
+    <div class="row">
+        <h2 th:text="${productData.informationProviderName}">Place Name</h2>
+    </div>
+    <div class="row">
+        <div class="col-xs-6" align="center" style="font-size:150px">
+            <h3 th:text="${productName_0}">Product Name</h3>
+            <img th:attr="src=${imageLink_0}" class="img-responsive" />
+        </div>
+        <div class="col-xs-6" align="center" style="font-size:150px">
+            <h3 th:text="${productName_1}">Product Name</h3>
+            <img th:attr="src=${imageLink_1}" class="img-responsive" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6" align="center" style="font-size:150px">
+            <h3 th:text="${productName_2}">Product Name</h3>
+            <img th:attr="src=${imageLink_2}" class="img-responsive" />
+        </div>
+        <div class="col-xs-6" align="center" style="font-size:150px">
+            <h3 th:text="${productName_5}">Product Name</h3>
+            <img th:attr="src=${imageLink_5}" class="img-responsive" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6" align="center" style="font-size:150px">
+            <h3 th:text="${productName_3}">Product Name</h3>
+            <img th:attr="src=${imageLink_3}" class="img-responsive" />
+        </div>
+        <div class="col-xs-6" align="center" style="font-size:150px">
+            <h3 th:text="${productName_4}">Product Name</h3>
+            <img th:attr="src=${imageLink_4}" class="img-responsive" />
+        </div>
+    </div>
+</th:block>
+</body>
+</html>

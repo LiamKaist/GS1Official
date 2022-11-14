@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2017 Open Language for Internet of Things (Oliot)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<product_data:productData xmlns:product_data="urn:gs1:tsd:product_data:xsd:1"
+                          xmlns:basic_product_information_module="urn:gs1:tsd:basic_product_information_module:xsd:1"
+                          xmlns:product_allergen_information_module="urn:gs1:tsd:product_allergen_information_module:xsd:1">
+    <gtin>12345678912345</gtin>
+    <targetMarket codeListVersion="1.1">410</targetMarket>
+    <informationProviderGLN>1234567891234</informationProviderGLN>
+    <informationProviderName>Information Provider Name</informationProviderName>
+    <productDataRecord>
+        <productionVariantDescription codeListVersion="1.1" languageCode="en">
+            Product Variant Description
+        </productionVariantDescription>
+        <productionVariantEffectiveDateTime>2004-04-12T13:20:00</productionVariantEffectiveDateTime>
+        <module>
+            <basic_product_information_module:basicProductInformationModule>
+                <productName languageCode="en" codeListVersion="1.1">
+                    Product Name
+                </productName>
+                <consumerMarketingDescription languageCode="en" codeListVersion="1.1">
+                    Consumer Marketing Description
+                </consumerMarketingDescription>
+                <gpcCategoryCode>12345678</gpcCategoryCode>
+                <regulatedProductName languageCode="en" codeListVersion="1.1">
+                    Regulated Product Name
+                </regulatedProductName>
+                <brandNameInformation>
+                    <brandName>Brand Name</brandName>
+                    <languageSpecificBrandName languageCode="en" codeListVersion="1.1">
+                        Brand Name
+                    </languageSpecificBrandName>
+                </brandNameInformation>
+                <productInformationLink>
+                    <url>http://www.resl.kaist.ac.kr</url>
+                    <productInformationTypeCode>IFU</productInformationTypeCode>
+                    <languageCode>kr</languageCode>
+                </productInformationLink>
+                <imageLink>
+                    <url>http://www.resl.kaist.ac.kr/image</url>
+                    <imageTypeCode>LOGO</imageTypeCode>
+                    <languageCode>kr</languageCode>
+                    <imagePixelHeight>10</imagePixelHeight>
+                    <imagePixelWidth>10</imagePixelWidth>
+                    <fileSize measurementUnitCode="Bytes" codeListVersion="1.1">50</fileSize>
+                </imageLink>
+                <packagingSignatureLine>
+                    <partyContactRoleCode>BRAND_OWNER</partyContactRoleCode>
+                    <partyContactName>Gaurav Kalra</partyContactName>
+                    <partyContactAddress>SoC, KAIST</partyContactAddress>
+                    <gln>1234567891234</gln>
+                    <communicationChannel>
+                        <communicationChannelCode>EMAIL</communicationChannelCode>
+                        <communicationValue>gvkala@kaist.ac.kr</communicationValue>
+                        <communicationChannelName>Channel Name</communicationChannelName>
+                    </communicationChannel>
+                </packagingSignatureLine>
+            </basic_product_information_module:basicProductInformationModule>
+            <product_allergen_information_module:productAllergenInformationModule>
+                <allergenRelatedInformation>
+                    <allergenStatement languageCode="en">
+                        Allergen Statement
+                    </allergenStatement>
+                    <allergenSpecificationAgency>
+                        Allergen Agency
+                    </allergenSpecificationAgency>
+                    <allergenSpecificationName>
+                        Spec Name
+                    </allergenSpecificationName>
+                    <allergen>
+                        <allergenTypeCode>AA</allergenTypeCode>
+                        <levelOfContainmentCode>CONTAINS</levelOfContainmentCode>
+                    </allergen>
+                </allergenRelatedInformation>
+            </product_allergen_information_module:productAllergenInformationModule>
+        </module>
+        <productComponentRecord>
+            <componentNumber>0</componentNumber>
+        </productComponentRecord>
+        <avpList>
+            <stringAVP name="attr1">ATTR1 value</stringAVP>
+        </avpList>
+    </productDataRecord>
+    <avpList>
+        <stringAVP name="attr1">ATTR1 value</stringAVP>
+    </avpList>
+</product_data:productData>

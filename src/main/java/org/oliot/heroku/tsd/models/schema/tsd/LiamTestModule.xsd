@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:liam_test_module="urn:gs1:tsd:liam_test_module:xsd:1"
+            xmlns:shared_common="urn:gs1:shared:shared_common:xsd:3" xmlns:tsd_common="urn:gs1:tsd:tsd_common:xsd:1"
+            targetNamespace="urn:gs1:tsd:liam_test_module:xsd:1" elementFormDefault="unqualified"
+            attributeFormDefault="unqualified" version="1.1">
+
+    <xsd:import namespace="urn:gs1:shared:shared_common:xsd:3" schemaLocation="../shared/SharedCommon.xsd"/>
+    <xsd:import namespace="urn:gs1:tsd:tsd_common:xsd:1" schemaLocation="TSDCommon.xsd"/>
+    
+    <xsd:element name="liamTestModule" type="liam_test_module:TSD_LiamTestModuleType"/>
+
+    <xsd:complexType name="TSD_LiamTestModuleType">
+        <xsd:element name="productName" type="shared_common:Description80Type" maxOccurs="unbounded"/>      
+    </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2017 Open Language for Internet of Things (Oliot)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<product_data:productData xmlns:product_data="urn:gs1:tsd:product_data:xsd:1"
+                          xmlns:basic_product_information_module="urn:gs1:tsd:basic_product_information_module:xsd:1"
+                          xmlns:product_allergen_information_module="urn:gs1:tsd:product_allergen_information_module:xsd:1"
+                          xmlns:product_instructions_module="urn:gs1:tsd:product_instructions_module:xsd:1"
+                          xmlns:product_quantity_information_module="urn:gs1:tsd:product_quantity_information_module:xsd:1"
+                          xmlns:food_and_beverage_information_module="urn:gs1:tsd:food_and_beverage_information_module:xsd:1"
+                          xmlns:nutritional_product_information_module="urn:gs1:tsd:nutritional_product_information_module:xsd:1">
+    <gtin>08801037088168</gtin>
+    <targetMarket codeListVersion="1.1">410</targetMarket>
+    <informationProviderGLN>1234567891234</informationProviderGLN>
+    <informationProviderName>Lotte Mart</informationProviderName>
+    <productDataRecord>
+        <module>
+            <basic_product_information_module:basicProductInformationModule>
+                <productName languageCode="kr" codeListVersion="1.1">오레오 화이트크림</productName>
+                <gpcCategoryCode>12345678</gpcCategoryCode>
+                <brandNameInformation>
+                    <brandName>오레오</brandName>
+                    <languageSpecificBrandName languageCode="en" codeListVersion="1.1">Oreo</languageSpecificBrandName>
+                </brandNameInformation>
+                <productInformationLink>
+                    <url>http://www.lottemart.com/product/ProductDetail.do?ProductCD=8801037088168</url>
+                    <productInformationTypeCode>MARKETING_INFORMATION</productInformationTypeCode>
+                    <languageCode>kr</languageCode>
+                </productInformationLink>
+                <imageLink>
+                    <url>http://res.cloudinary.com/hcxh60wvk/image/upload/v1505284440/8801037088168/1.jpg</url>
+                    <imageTypeCode>PRODUCT_IMAGE</imageTypeCode>
+                    <languageCode>kr</languageCode>
+                </imageLink>
+                <packagingSignatureLine>
+                    <partyContactRoleCode>MANUFACTURER_OF_GOODS</partyContactRoleCode>
+                    <partyContactName>미가방 LLC</partyContactName>
+                    <partyContactAddress>34-40, Oegol-gil, Gimhwa-eup, Cheorwon-gun, Gangwon-do, Republic of Korea</partyContactAddress>
+                </packagingSignatureLine>
+                <packagingSignatureLine>
+                    <partyContactRoleCode>DISTRIBUTOR</partyContactRoleCode>
+                    <partyContactName>동서식품(주)</partyContactName>
+                    <partyContactAddress>215, Bupyeongbuk-ro, Bupyeong-gu, Incheon, Republic of Korea</partyContactAddress>
+                </packagingSignatureLine>
+            </basic_product_information_module:basicProductInformationModule>
+            <product_allergen_information_module:productAllergenInformationModule>
+                <allergenRelatedInformation>
+                    <allergenStatement languageCode="en">This product is being produced in the facilities producing peanut products</allergenStatement>
+                    <allergenStatement languageCode="en">Packing Material: Poly-propylene</allergenStatement>
+                </allergenRelatedInformation>
+            </product_allergen_information_module:productAllergenInformationModule>
+            <product_instructions_module:productInstructionsModule>
+                <consumerStorageInstructions languageCode="en" codeListVersion="1.1">Store the place without moisture and direct light, and eat quickly after opening</consumerStorageInstructions>
+            </product_instructions_module:productInstructionsModule>
+            <product_quantity_information_module:productQuantityInformationModule>
+                <netContent measurementUnitCode="GRM" codeListVersion="1.1">100</netContent>
+                <servingQuantityInformation>
+                    <numberOfServingsPerPackage>2</numberOfServingsPerPackage>
+                    <measurementPrecisionCode codeListVersion="1.1">EXACT</measurementPrecisionCode>
+                </servingQuantityInformation>
+            </product_quantity_information_module:productQuantityInformationModule>
+            <nutritional_product_information_module:nutritionalProductInformationModule>
+                <nutrientHeader>
+                    <preparationStateCode>PREPARED</preparationStateCode>
+                    <servingSizeDescription languageCode="en">One-time serving size (50 g), total two times (100 g)</servingSizeDescription>
+                    <servingSize measurementUnitCode="GRM" codeListVersion="1.1">50</servingSize>
+                    <numberOfServings>2.0</numberOfServings>
+                    <nutrientDetail>
+                        <nutrientTypeCode>CHO-</nutrientTypeCode>
+                        <dailyValueIntakePercent>11</dailyValueIntakePercent>
+                        <quantityContained measurementUnitCode="GRM" codeListVersion="1.1">35</quantityContained>
+                    </nutrientDetail>
+                    <nutrientDetail>
+                        <nutrientTypeCode>SUGAR</nutrientTypeCode>
+                        <quantityContained measurementUnitCode="GRM" codeListVersion="1.1">18.5</quantityContained>
+                    </nutrientDetail>
+                    <nutrientDetail>
+                        <nutrientTypeCode>PRO-</nutrientTypeCode>
+                        <dailyValueIntakePercent>4</dailyValueIntakePercent>
+                        <quantityContained measurementUnitCode="GRM" codeListVersion="1.1">2.0</quantityContained>
+                    </nutrientDetail>
+                    <nutrientDetail>
+                        <nutrientTypeCode>FAT</nutrientTypeCode>
+                        <dailyValueIntakePercent>22</dailyValueIntakePercent>
+                        <quantityContained measurementUnitCode="GRM" codeListVersion="1.1">11</quantityContained>
+                    </nutrientDetail>
+                    <nutrientDetail>
+                        <nutrientTypeCode>FASAT</nutrientTypeCode>
+                        <dailyValueIntakePercent>40</dailyValueIntakePercent>
+                        <quantityContained measurementUnitCode="GRM" codeListVersion="1.1">6</quantityContained>
+                    </nutrientDetail>
+                    <nutrientDetail>
+                        <nutrientTypeCode>FATRN</nutrientTypeCode>
+                        <quantityContained measurementUnitCode="GRM" codeListVersion="1.1">0</quantityContained>
+                    </nutrientDetail>
+                    <nutrientDetail>
+                        <nutrientTypeCode>CHOL-</nutrientTypeCode>
+                        <dailyValueIntakePercent>0</dailyValueIntakePercent>
+                        <quantityContained measurementUnitCode="MGM" codeListVersion="1.1">0.0</quantityContained>
+                    </nutrientDetail>
+                    <nutrientDetail>
+                        <nutrientTypeCode>NA</nutrientTypeCode>
+                        <dailyValueIntakePercent>10</dailyValueIntakePercent>
+                        <quantityContained measurementUnitCode="MGM" codeListVersion="1.1">200</quantityContained>
+                    </nutrientDetail>
+                    <nutrientDetail>
+                        <nutrientTypeCode>ENER-</nutrientTypeCode>
+                        <quantityContained measurementUnitCode="E14" codeListVersion="1.1">245</quantityContained>
+                    </nutrientDetail>
+                </nutrientHeader>
+            </nutritional_product_information_module:nutritionalProductInformationModule>
+            <food_and_beverage_information_module:foodAndBeverageIngredientInformationModule>
+                <ingredientStatement languageCode="en">flour(wheat: U.S.), powdered sugar(sugar, cornstarch), vegetable oil1[palm oil(Malaysia), coconut oil(Indonesia, Philippine), corn oil, concoction(Oleoresin Rosemary, Oleoresin Sage)], vegetable oil2[palm oil, Oleoresin Rosemary, Oleoresin Sage)], lactose, powdered, crystalized glucose, cocoa powder(U.S. 70%, Singapore 30%) 5.0%, starch syrup, cornstarch, sweet whey powder, inflation agent, refined salt, lecithin, synthetic flavoring agent(vanilla flavor, vanillin) Wheat, Milk, Soybean contained</ingredientStatement>
+            </food_and_beverage_information_module:foodAndBeverageIngredientInformationModule>
+        </module>
+    </productDataRecord>
+</product_data:productData>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2017 Open Language for Internet of Things (Oliot)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<product_claims_and_endorsements_module:productClaimsAndEndorsementsModule
+        xmlns:product_claims_and_endorsements_module="urn:gs1:tsd:product_claims_and_endorsements_module:xsd:1"
+>
+    <regulatoryComplianceCode codeListVersion="">regulatoryComplianceCode</regulatoryComplianceCode>
+    <warningStatement codeListVersion="" languageCode="">warningStatement</warningStatement>
+    <nutritionalClaimCode codeListVersion="">nutritionalClaimCode</nutritionalClaimCode>
+    <nutritionalClaimStatement codeListVersion="" languageCode="">nutritionalClaimStatement</nutritionalClaimStatement>
+    <healthClaimDescription codeListVersion="" languageCode="">healthClaimDescription</healthClaimDescription>
+    <dietaryClaimCode codeListVersion="">dietaryClaimCode</dietaryClaimCode>
+    <accreditationInformation>
+        <accreditationCode codeListVersion="">accreditationCode</accreditationCode>
+        <accreditationText codeListVersion="" languageCode="">accreditationText</accreditationText>
+        <avpList>
+            <stringAVP name="">stringAVP</stringAVP>
+        </avpList>
+    </accreditationInformation>
+    <avpList>
+        <stringAVP name="">stringAVP</stringAVP>
+    </avpList>
+</product_claims_and_endorsements_module:productClaimsAndEndorsementsModule>
